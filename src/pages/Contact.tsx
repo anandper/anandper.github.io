@@ -103,45 +103,45 @@ const Contact = () => {
 
           {/* Direct */}
           <aside className="md:col-span-5">
-            <div className="bg-ink text-ivory p-10 shadow-elegant">
-              <div className="eyebrow text-ivory/60"><span className="h-px w-8 bg-brass" />Direct</div>
-              <h3 className="font-display text-3xl mt-4 leading-tight">Prefer to reach out directly?</h3>
+            <div className="bg-ivory-warm border border-border p-10 shadow-elegant">
+              <div className="eyebrow"><span className="h-px w-8 bg-brass" />Direct</div>
+              <h3 className="font-display text-3xl mt-4 leading-tight text-ink">Prefer to reach out directly?</h3>
               <ul className="mt-8 space-y-5">
                 <li>
                   <a href="mailto:anand@clarixconsulting.com" className="flex items-start gap-4 group">
-                    <span className="size-10 grid place-items-center border border-ivory/20 group-hover:bg-brass group-hover:border-brass transition-colors flex-none">
+                    <span className="size-10 grid place-items-center border border-border group-hover:bg-brass group-hover:border-brass transition-colors flex-none text-ink">
                       <Mail className="size-4" />
                     </span>
                     <span>
-                      <span className="block text-xs uppercase tracking-[0.2em] text-ivory/50">Email</span>
-                      <span className="block mt-1 text-ivory">anand@clarixconsulting.com</span>
+                      <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground">Email</span>
+                      <span className="block mt-1 text-ink">anand@clarixconsulting.com</span>
                     </span>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="flex items-start gap-4 group">
-                    <span className="size-10 grid place-items-center border border-ivory/20 group-hover:bg-brass group-hover:border-brass transition-colors flex-none">
+                    <span className="size-10 grid place-items-center border border-border group-hover:bg-brass group-hover:border-brass transition-colors flex-none text-ink">
                       <Linkedin className="size-4" />
                     </span>
                     <span>
-                      <span className="block text-xs uppercase tracking-[0.2em] text-ivory/50">LinkedIn</span>
-                      <span className="block mt-1 text-ivory">Connect with Anand</span>
+                      <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground">LinkedIn</span>
+                      <span className="block mt-1 text-ink">Connect with Anand</span>
                     </span>
                   </a>
                 </li>
                 <li>
                   <a href="https://calendly.com" target="_blank" rel="noreferrer" className="flex items-start gap-4 group">
-                    <span className="size-10 grid place-items-center border border-ivory/20 group-hover:bg-brass group-hover:border-brass transition-colors flex-none">
+                    <span className="size-10 grid place-items-center border border-border group-hover:bg-brass group-hover:border-brass transition-colors flex-none text-ink">
                       <Calendar className="size-4" />
                     </span>
                     <span>
-                      <span className="block text-xs uppercase tracking-[0.2em] text-ivory/50">Book a 30-min call</span>
-                      <span className="block mt-1 text-ivory">calendly.com/clarix</span>
+                      <span className="block text-xs uppercase tracking-[0.2em] text-muted-foreground">Book a 30-min call</span>
+                      <span className="block mt-1 text-ink">calendly.com/clarix</span>
                     </span>
                   </a>
                 </li>
               </ul>
-              <div className="mt-10 pt-8 border-t border-ivory/15 flex items-center gap-3 text-sm text-ivory/70">
+              <div className="mt-10 pt-8 border-t border-border flex items-center gap-3 text-sm text-muted-foreground">
                 <Clock className="size-4 text-brass" />
                 We respond within 1 business day.
               </div>

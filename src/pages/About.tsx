@@ -6,17 +6,16 @@ import { CTABanner } from "@/components/site/CTABanner";
 import founderImg from "@/assets/founder.jpg";
 
 const highlights = [
-  { co: "Perficient", note: "Led 120+ engineers across a $20M+ P&L delivery portfolio." },
-  { co: "AAG", note: "Drove 65% cost reduction and 79% productivity gain across the technology portfolio." },
-  { co: "Bio-Rad", note: "Delivered HL7/FHIR integrations, cloud SaaS, and FDA-compliant platforms." },
-  { co: "First American", note: "Eliminated 90% of legacy technical debt across a $4M modernization program." },
+  { co: "Global Digital Consultancy", note: "Led 120+ engineers across a $20M+ P&L delivery portfolio." },
+  { co: "Enterprise Technology Group", note: "Drove 65% cost reduction and 79% productivity gain across the technology portfolio." },
+  { co: "Life Sciences Manufacturer", note: "Delivered HL7/FHIR integrations, cloud SaaS, and FDA-compliant platforms." },
+  { co: "Financial Services Leader", note: "Eliminated 90% of legacy technical debt across a $4M modernization program." },
 ];
 
 const credentials = [
   { icon: GraduationCap, text: "Executive MBA, Chapman University" },
   { icon: GraduationCap, text: "MS Computer Science, NJIT" },
   { icon: Award, text: "AWS Certified Solutions Architect" },
-  { icon: Award, text: "IAPP AIGP (In Progress)" },
 ];
 
 const About = () => (
@@ -60,20 +59,20 @@ const About = () => (
     </section>
 
     {/* Career Highlights */}
-    <section className="py-24 md:py-32 bg-ink text-ivory">
+    <section className="py-24 md:py-32 bg-ivory-warm">
       <div className="container-tight">
         <div className="max-w-2xl">
-          <div className="eyebrow text-ivory/60"><span className="h-px w-8 bg-brass" />Career Highlights</div>
-          <h2 className="font-display text-4xl md:text-5xl font-light mt-4 leading-[1.05] text-balance">
+          <div className="eyebrow"><span className="h-px w-8 bg-brass" />Career Highlights</div>
+          <h2 className="font-display text-4xl md:text-5xl font-light mt-4 leading-[1.05] text-balance text-ink">
             Selected programs. Outsized outcomes.
           </h2>
         </div>
-        <ol className="mt-16 relative border-l border-ivory/15 pl-8 space-y-12">
+        <ol className="mt-16 relative border-l border-border pl-8 space-y-12">
           {highlights.map((h) => (
             <li key={h.co} className="relative">
               <span className="absolute -left-[37px] top-2 size-3 bg-brass rounded-full" />
-              <div className="font-display text-2xl md:text-3xl text-ivory">{h.co}</div>
-              <div className="mt-2 text-ivory/70 max-w-2xl leading-relaxed">{h.note}</div>
+              <div className="font-display text-2xl md:text-3xl text-ink">{h.co}</div>
+              <div className="mt-2 text-muted-foreground max-w-2xl leading-relaxed">{h.note}</div>
             </li>
           ))}
         </ol>

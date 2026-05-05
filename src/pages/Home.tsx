@@ -149,24 +149,23 @@ const Home = () => {
       </section>
 
       {/* METRICS */}
-      <section className="py-24 md:py-32 bg-ink text-ivory">
+      <section className="py-24 md:py-32 bg-ivory-warm">
         <div className="container-tight">
           <SectionHeader
-            invert
             eyebrow="Outcomes, not deliverables"
             title="Numbers that mattered to the boardroom."
             description="Selected results from recent engagements across regulated and high-growth environments."
           />
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px mt-16 bg-ivory/10 border border-ivory/10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px mt-16 bg-border border border-border">
             {metrics.map((m) => (
-              <div key={m.l} className="bg-ink p-8 md:p-10">
-                <div className="font-display text-5xl md:text-6xl font-light text-ivory">{m.n}</div>
-                <div className="mt-4 text-sm uppercase tracking-[0.15em] text-ivory/60">{m.l}</div>
+              <div key={m.l} className="bg-background p-8 md:p-10">
+                <div className="font-display text-5xl md:text-6xl font-light text-ink">{m.n}</div>
+                <div className="mt-4 text-sm uppercase tracking-[0.15em] text-muted-foreground">{m.l}</div>
               </div>
             ))}
           </div>
           <div className="mt-12">
-            <Button asChild variant="outlineIvory" size="lg">
+            <Button asChild variant="ink" size="lg">
               <Link to="/software">See software case studies <ArrowRight /></Link>
             </Button>
           </div>
