@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, GraduationCap, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { PageHero } from "@/components/site/PageHero";
+import { PageHero } from "@/assets/software-hero.jpg";
 import { CTABanner } from "@/components/site/CTABanner";
 import founderImg from "@/assets/founder.jpg";
 
