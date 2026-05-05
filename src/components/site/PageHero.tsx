@@ -9,7 +9,7 @@ export const PageHero = ({ eyebrow, title, lede }: Props) => (
       className="absolute inset-0 bg-cover bg-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     />
-    <div aria-hidden className="absolute inset-0 bg-gradient-ivory/80 bg-background/75 backdrop-blur-[2px]" />
+    <div aria-hidden className="absolute inset-0 bg-background/80 backdrop-blur-[2px]" />
     <div className="container-tight py-24 md:py-32 relative">
       <div className="eyebrow"><span className="h-px w-8 bg-brass" />{eyebrow}</div>
       <h1 className="font-display text-5xl md:text-7xl font-light leading-[1.02] mt-5 text-ink text-balance max-w-4xl">
