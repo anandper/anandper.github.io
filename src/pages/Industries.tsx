@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, HeartPulse, FlaskConical, MonitorCog, Landmark, Factory } from "lucide-react";
-import { PageHero } from "@/assets/software-hero.jpg";
+import { PageHero } from "@/components/site/PageHero";
 import { CTABanner } from "@/components/site/CTABanner";
 
 const industries = [

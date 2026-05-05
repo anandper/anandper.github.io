@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
-import { PageHero } from "@/assets/software-hero.jpg";
+import { PageHero } from "@/components/site/PageHero";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
