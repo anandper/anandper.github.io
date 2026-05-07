@@ -22,13 +22,6 @@ const team = [
   },
 ];
 
-const highlights = [
-  { co: "Global Digital Consultancy", note: "Led 120+ engineers across a $20M+ P&L delivery portfolio." },
-  { co: "Enterprise Technology Group", note: "Drove 65% cost reduction and 79% productivity gain across the technology portfolio." },
-  { co: "Life Sciences Manufacturer", note: "Delivered HL7/FHIR integrations, cloud SaaS, and FDA-compliant platforms." },
-  { co: "Financial Services Leader", note: "Eliminated 90% of legacy technical debt across a $4M modernization program." },
-];
-
 const credentials = [
   { icon: GraduationCap, text: "Executive MBA, Chapman University" },
   { icon: GraduationCap, text: "MS Computer Science, NJIT" },
@@ -47,7 +40,7 @@ const About = () => (
     <section className="py-24 md:py-32">
       <div className="container-tight grid md:grid-cols-12 gap-12 lg:gap-16 items-start">
         <div className="md:col-span-5">
-          <div className="aspect-[4/5] overflow-hidden shadow-elegant bg-ivory-warm max-w-sm">
+          <div className="aspect-[4/5] overflow-hidden shadow-elegant bg-ivory-warm max-w-[12rem]">
             <img src={founderImg} alt="Anand — Founder, Clarix Consulting Group" loading="lazy" width={1024} height={1280} className="h-full w-full object-cover" />
           </div>
           <div className="mt-6">
@@ -75,29 +68,8 @@ const About = () => (
       </div>
     </section>
 
-    {/* Career Highlights */}
-    <section className="py-24 md:py-32 bg-ivory-warm">
-      <div className="container-tight">
-        <div className="max-w-2xl">
-          <div className="eyebrow"><span className="h-px w-8 bg-brass" />Career Highlights</div>
-          <h2 className="font-display text-4xl md:text-5xl font-light mt-4 leading-[1.05] text-balance text-ink">
-            Selected programs. Outsized outcomes.
-          </h2>
-        </div>
-        <ol className="mt-16 relative border-l border-border pl-8 space-y-12">
-          {highlights.map((h) => (
-            <li key={h.co} className="relative">
-              <span className="absolute -left-[37px] top-2 size-3 bg-brass rounded-full" />
-              <div className="font-display text-2xl md:text-3xl text-ink">{h.co}</div>
-              <div className="mt-2 text-muted-foreground max-w-2xl leading-relaxed">{h.note}</div>
-            </li>
-          ))}
-        </ol>
-      </div>
-    </section>
-
     {/* Team */}
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 bg-ivory-warm">
       <div className="container-tight">
         <div className="max-w-2xl">
           <div className="eyebrow"><span className="h-px w-8 bg-brass" />The Team</div>
@@ -108,7 +80,7 @@ const About = () => (
         <div className="mt-16 grid sm:grid-cols-2 gap-10 lg:gap-12">
           {team.map((m) => (
             <div key={m.name} className="flex gap-6 items-start">
-              <div className="size-28 md:size-32 flex-none overflow-hidden rounded-full shadow-elegant bg-background">
+              <div className="size-44 md:size-48 flex-none overflow-hidden rounded-full shadow-elegant bg-background">
                 <img src={m.img} alt={`${m.name} — ${m.title}, Clarix Consulting Group`} loading="lazy" width={256} height={256} className="h-full w-full object-cover" />
               </div>
               <div className="min-w-0">
