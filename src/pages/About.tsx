@@ -22,13 +22,6 @@ const team = [
   },
 ];
 
-const highlights = [
-  { co: "Global Digital Consultancy", note: "Led 120+ engineers across a $20M+ P&L delivery portfolio." },
-  { co: "Enterprise Technology Group", note: "Drove 65% cost reduction and 79% productivity gain across the technology portfolio." },
-  { co: "Life Sciences Manufacturer", note: "Delivered HL7/FHIR integrations, cloud SaaS, and FDA-compliant platforms." },
-  { co: "Financial Services Leader", note: "Eliminated 90% of legacy technical debt across a $4M modernization program." },
-];
-
 const credentials = [
   { icon: GraduationCap, text: "Executive MBA, Chapman University" },
   { icon: GraduationCap, text: "MS Computer Science, NJIT" },
