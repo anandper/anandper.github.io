@@ -97,7 +97,7 @@ const About = () => (
     </section>
 
     {/* Team */}
-    <section className="py-24 md:py-32 bg-ivory-warm">
+    <section className="py-24 md:py-32">
       <div className="container-tight">
         <div className="max-w-2xl">
           <div className="eyebrow"><span className="h-px w-8 bg-brass" />The Team</div>
