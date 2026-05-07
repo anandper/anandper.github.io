@@ -123,7 +123,7 @@ const About = () => (
     </section>
 
     {/* Credentials */}
-    <section className="py-24 md:py-32 bg-background">
+    <section className="py-24 md:py-32 bg-ivory-warm">
       <div className="container-tight grid md:grid-cols-12 gap-12">
         <div className="md:col-span-4">
           <div className="eyebrow"><span className="h-px w-8 bg-brass" />Education & Certifications</div>
