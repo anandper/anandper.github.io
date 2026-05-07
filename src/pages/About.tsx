@@ -47,7 +47,7 @@ const About = () => (
     <section className="py-24 md:py-32">
       <div className="container-tight grid md:grid-cols-12 gap-12 lg:gap-16 items-start">
         <div className="md:col-span-5">
-          <div className="aspect-[4/5] overflow-hidden shadow-elegant bg-ivory-warm">
+          <div className="aspect-[4/5] overflow-hidden shadow-elegant bg-ivory-warm max-w-sm">
             <img src={founderImg} alt="Anand — Founder, Clarix Consulting Group" loading="lazy" width={1024} height={1280} className="h-full w-full object-cover" />
           </div>
           <div className="mt-6">
@@ -105,16 +105,16 @@ const About = () => (
             Senior practitioners. No handoffs.
           </h2>
         </div>
-        <div className="mt-16 grid md:grid-cols-2 gap-12 lg:gap-16">
+        <div className="mt-16 grid sm:grid-cols-2 gap-10 lg:gap-12">
           {team.map((m) => (
-            <div key={m.name}>
-              <div className="aspect-[4/5] overflow-hidden shadow-elegant bg-ivory-warm">
-                <img src={m.img} alt={`${m.name} — ${m.title}, Clarix Consulting Group`} loading="lazy" width={1024} height={1280} className="h-full w-full object-cover" />
+            <div key={m.name} className="flex gap-6 items-start">
+              <div className="size-28 md:size-32 flex-none overflow-hidden rounded-full shadow-elegant bg-background">
+                <img src={m.img} alt={`${m.name} — ${m.title}, Clarix Consulting Group`} loading="lazy" width={256} height={256} className="h-full w-full object-cover" />
               </div>
-              <div className="mt-6">
-                <div className="font-display text-2xl text-ink">{m.name}</div>
+              <div className="min-w-0">
+                <div className="font-display text-xl text-ink">{m.name}</div>
                 <div className="text-sm text-muted-foreground mt-1">{m.title}</div>
-                <p className="mt-4 text-muted-foreground leading-relaxed">{m.bio}</p>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{m.bio}</p>
               </div>
             </div>
           ))}
@@ -123,7 +123,7 @@ const About = () => (
     </section>
 
     {/* Credentials */}
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 bg-ivory-warm">
       <div className="container-tight grid md:grid-cols-12 gap-12">
         <div className="md:col-span-4">
           <div className="eyebrow"><span className="h-px w-8 bg-brass" />Education & Certifications</div>
