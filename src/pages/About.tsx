@@ -9,6 +9,12 @@ import ramImg from "@/assets/team-ram.jpg";
 
 const team = [
   {
+    name: "Anand",
+    title: "Founder & Principal Consultant",
+    img: founderImg,
+    bio: "Anand brings 15+ years leading enterprise programs at Fortune 500 companies across Life Sciences, FinServ, and Technology — owning $20M+ delivery portfolios and modernizing legacy stacks under FDA scrutiny.",
+  },
+  {
     name: "Urmi Vidyarthi",
     title: "Principal Consultant, Quality & Regulatory",
     img: urmiImg,
@@ -38,32 +44,21 @@ const About = () => (
 
     {/* Founder */}
     <section className="py-24 md:py-32">
-      <div className="container-tight grid md:grid-cols-12 gap-12 lg:gap-16 items-start">
-        <div className="md:col-span-5">
-          <div className="aspect-[4/5] overflow-hidden shadow-elegant bg-ivory-warm max-w-[12rem]">
-            <img src={founderImg} alt="Anand — Founder, Clarix Consulting Group" loading="lazy" width={1024} height={1280} className="h-full w-full object-cover" />
-          </div>
-          <div className="mt-6">
-            <div className="font-display text-2xl text-ink">Anand</div>
-            <div className="text-sm text-muted-foreground mt-1">Founder & Principal Consultant</div>
-          </div>
-        </div>
-        <div className="md:col-span-7">
-          <div className="eyebrow"><span className="h-px w-8 bg-brass" />Founder Story</div>
-          <h2 className="font-display text-4xl md:text-5xl font-light mt-4 leading-[1.05] text-ink text-balance">
-            "I help complex, regulated organizations turn operational complexity into measurable outcomes — through AI, modern engineering, and cloud."
-          </h2>
-          <div className="mt-8 space-y-5 text-lg text-muted-foreground leading-relaxed text-pretty">
-            <p>
-              After 15+ years leading enterprise programs at Fortune 500 companies across Life Sciences, FinServ, and Technology, I founded Clarix Consulting Group to bring that same senior leadership directly to organizations that need it most — without the overhead of a large firm.
-            </p>
-            <p>
-              I've been the executive accountable for $20M+ delivery portfolios, the technologist who modernized legacy stacks under FDA scrutiny, and the operator who turned around stalled programs across continents. That's the work — and that's who shows up when you engage Clarix.
-            </p>
-            <p>
-              I founded Clarix on a simple conviction: most clients don't need more frameworks. They need a senior partner who's done it before, who can see around the next corner, and who will own the outcome with them.
-            </p>
-          </div>
+      <div className="container-tight max-w-3xl">
+        <div className="eyebrow"><span className="h-px w-8 bg-brass" />Founder Story</div>
+        <h2 className="font-display text-4xl md:text-5xl font-light mt-4 leading-[1.05] text-ink text-balance">
+          "I help complex, regulated organizations turn operational complexity into measurable outcomes — through AI, modern engineering, and cloud."
+        </h2>
+        <div className="mt-8 space-y-5 text-lg text-muted-foreground leading-relaxed text-pretty">
+          <p>
+            After 15+ years leading enterprise programs at Fortune 500 companies across Life Sciences, FinServ, and Technology, I founded Clarix Consulting Group to bring that same senior leadership directly to organizations that need it most — without the overhead of a large firm.
+          </p>
+          <p>
+            I've been the executive accountable for $20M+ delivery portfolios, the technologist who modernized legacy stacks under FDA scrutiny, and the operator who turned around stalled programs across continents. That's the work — and that's who shows up when you engage Clarix.
+          </p>
+          <p>
+            I founded Clarix on a simple conviction: most clients don't need more frameworks. They need a senior partner who's done it before, who can see around the next corner, and who will own the outcome with them.
+          </p>
         </div>
       </div>
     </section>
@@ -77,18 +72,18 @@ const About = () => (
             Senior practitioners. No handoffs.
           </h2>
         </div>
-        <div className="mt-16 grid sm:grid-cols-2 gap-10 lg:gap-12">
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
           {team.map((m) => (
-            <div key={m.name} className="flex gap-6 items-start">
-              <div className="size-44 md:size-48 flex-none overflow-hidden rounded-full shadow-elegant bg-background">
-                <img src={m.img} alt={`${m.name} — ${m.title}, Clarix Consulting Group`} loading="lazy" width={256} height={256} className="h-full w-full object-cover" />
+            <article key={m.name} className="flex flex-col items-center text-center">
+              <div className="size-40 md:size-44 overflow-hidden rounded-full shadow-elegant bg-background">
+                <img src={m.img} alt={`${m.name} — ${m.title}, Clarix Consulting Group`} loading="lazy" width={320} height={320} className="h-full w-full object-cover" />
               </div>
-              <div className="min-w-0">
-                <div className="font-display text-xl text-ink">{m.name}</div>
+              <div className="mt-6">
+                <h3 className="font-display text-xl text-ink">{m.name}</h3>
                 <div className="text-sm text-muted-foreground mt-1">{m.title}</div>
-                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{m.bio}</p>
+                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{m.bio}</p>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
