@@ -4,6 +4,23 @@ import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/site/PageHero";
 import { CTABanner } from "@/components/site/CTABanner";
 import founderImg from "@/assets/founder.jpg";
+import urmiImg from "@/assets/team-urmi.jpg";
+import ramImg from "@/assets/team-ram.jpg";
+
+const team = [
+  {
+    name: "Urmi Vidyarthi",
+    title: "Principal Consultant, Quality & Regulatory",
+    img: urmiImg,
+    bio: "Urmi partners with life sciences and healthcare clients to navigate FDA, ISO, and HIPAA landscapes — translating regulatory complexity into pragmatic, audit-ready operating models.",
+  },
+  {
+    name: "Ram Iyer",
+    title: "Principal Consultant, Engineering & Cloud",
+    img: ramImg,
+    bio: "Ram leads modernization and platform engineering engagements, bringing deep experience in cloud architecture, AI integration, and scaling delivery teams across regulated enterprises.",
+  },
+];
 
 const highlights = [
   { co: "Global Digital Consultancy", note: "Led 120+ engineers across a $20M+ P&L delivery portfolio." },
