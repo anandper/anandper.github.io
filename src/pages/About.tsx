@@ -96,6 +96,32 @@ const About = () => (
       </div>
     </section>
 
+    {/* Team */}
+    <section className="py-24 md:py-32">
+      <div className="container-tight">
+        <div className="max-w-2xl">
+          <div className="eyebrow"><span className="h-px w-8 bg-brass" />The Team</div>
+          <h2 className="font-display text-4xl md:text-5xl font-light mt-4 leading-[1.05] text-balance text-ink">
+            Senior practitioners. No handoffs.
+          </h2>
+        </div>
+        <div className="mt-16 grid md:grid-cols-2 gap-12 lg:gap-16">
+          {team.map((m) => (
+            <div key={m.name}>
+              <div className="aspect-[4/5] overflow-hidden shadow-elegant bg-ivory-warm">
+                <img src={m.img} alt={`${m.name} — ${m.title}, Clarix Consulting Group`} loading="lazy" width={1024} height={1280} className="h-full w-full object-cover" />
+              </div>
+              <div className="mt-6">
+                <div className="font-display text-2xl text-ink">{m.name}</div>
+                <div className="text-sm text-muted-foreground mt-1">{m.title}</div>
+                <p className="mt-4 text-muted-foreground leading-relaxed">{m.bio}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* Credentials */}
     <section className="py-24 md:py-32">
       <div className="container-tight grid md:grid-cols-12 gap-12">
