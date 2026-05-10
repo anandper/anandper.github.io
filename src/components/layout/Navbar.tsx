@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/clarix-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -34,9 +35,8 @@ export const Navbar = () => {
       )}
     >
       <div className="container-tight flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-baseline gap-2 group">
-          <span className="font-display text-2xl font-medium tracking-tight text-ink">Clarix</span>
-          <span className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground hidden sm:inline">Consulting Group</span>
+        <Link to="/" className="flex items-center group" aria-label="Clarix Consulting Group — Home">
+          <img src={logo} alt="Clarix Consulting Group logo" width={1024} height={1024} className="h-12 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
