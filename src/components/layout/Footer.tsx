@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Mail } from "lucide-react";
+import logo from "@/assets/clarix-logo.png";
 
 export const Footer = () => (
   <footer className="bg-ink text-ivory">
     <div className="container-tight py-20">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-5">
-          <div className="flex items-baseline gap-2">
-            <span className="font-display text-3xl font-medium">Clarix</span>
-            <span className="text-[10px] uppercase tracking-[0.25em] text-ivory/60">Consulting Group</span>
+          <div className="bg-ivory inline-block p-3 rounded-sm">
+            <img src={logo} alt="Clarix Consulting Group logo" width={1024} height={1024} loading="lazy" className="h-16 w-auto" />
           </div>
           <p className="mt-6 text-ivory/70 max-w-md text-pretty">
             Senior consulting leadership for Quality & Regulatory transformation, Software Delivery, and Program Management.
