@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Mail } from "lucide-react";
-import logo from "@/assets/clarix-logo.png";
+import logo from "@/assets/clarix-logo-option-3.png";
 
 export const Footer = () => (
   <footer className="bg-ink text-ivory">
