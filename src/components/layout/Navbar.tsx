@@ -34,9 +34,9 @@ export const Navbar = () => {
         scrolled ? "border-b border-border shadow-soft" : "border-b border-border/40"
       )}
     >
-      <div className="container-tight flex h-20 items-center justify-between">
+      <div className="container-tight flex h-28 items-center justify-between">
         <Link to="/" className="flex items-center group" aria-label="Clarix Consulting Group — Home">
-          <img src={logo} alt="Clarix Consulting Group logo" width={1024} height={1024} className="h-12 w-auto" />
+          <img src={logo} alt="Clarix Consulting Group logo" width={1024} height={1024} className="h-20 md:h-24 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
