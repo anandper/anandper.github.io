@@ -93,7 +93,7 @@ const Software = () => (
             Six offerings. One team of senior operators.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Engagements scoped from 6-week sprints to multi-year transformations — always principal-led.
+            Engagements scoped from 6-week sprints to multi-year transformations — always led by experienced operators.
           </p>
         </div>
 
