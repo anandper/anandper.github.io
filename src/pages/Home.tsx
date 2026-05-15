@@ -32,7 +32,7 @@ const proof = [
   { k: "15+", v: "Years Fortune 500 program leadership" },
   { k: "$20M+", v: "Programs delivered, P&L owned" },
   { k: "Regulated", v: "FDA, ISO 13485, MDSAP, EU MDR" },
-  { k: "Senior", v: "Experienced operators on every engagement" },
+  { k: "Clear", v: "Plain answers, defensible decisions" },
 ];
 
 const metrics = [
@@ -55,7 +55,7 @@ const Home = () => {
                 Clarity. <em className="italic text-brass font-normal">Delivered.</em>
               </h1>
               <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed text-pretty">
-                Consulting for Life Sciences and Technology — Quality & Regulatory transformation, Software Development, and Program Management. Experienced operators who've already done the work.
+                Consulting for Life Sciences and Technology — Quality & Regulatory transformation, Software Development, and Program Management. We turn complex problems into clear, decisive action.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Button asChild variant="ink" size="xl">
@@ -132,9 +132,9 @@ const Home = () => {
       <section className="py-24 md:py-32">
         <div className="container-tight grid md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
-            <SectionHeader eyebrow="Why Clarix" title="Senior operators. Regulated reality." />
+          <SectionHeader eyebrow="Why Clarix" title="Clarity in complex, regulated work." />
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              We bring experienced operators who've already done the work — at scale, in your industry, with the audit trail to prove it.
+              We cut through ambiguity — translating regulatory, technical, and organizational complexity into plain answers and a path forward you can defend.
             </p>
           </div>
           <div className="md:col-span-7 grid sm:grid-cols-2 gap-px bg-border border border-border">
