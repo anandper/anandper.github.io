@@ -39,7 +39,7 @@ const About = () => (
     <PageHero
       eyebrow="About"
       title="A boutique firm with Fortune 500 muscle."
-      lede="Clarix exists to bring senior, principal-led leadership to organizations that need it most — without the overhead of a global firm."
+      lede="Clarix exists to bring experienced operators to organizations that need them most — without the overhead of a global firm."
     />
 
     {/* Founder */}
@@ -69,7 +69,7 @@ const About = () => (
         <div className="max-w-2xl">
           <div className="eyebrow"><span className="h-px w-8 bg-brass" />The Team</div>
           <h2 className="font-display text-4xl md:text-5xl font-light mt-4 leading-[1.05] text-balance text-ink">
-            Senior practitioners. No handoffs.
+            Experienced operators, end to end.
           </h2>
         </div>
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
