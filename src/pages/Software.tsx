@@ -90,10 +90,10 @@ const Software = () => (
         <div className="max-w-3xl">
           <div className="eyebrow"><span className="h-px w-8 bg-brass" />What we deliver</div>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] mt-4 text-ink text-balance">
-            Six offerings. One team of senior operators.
+            Six offerings. One discipline of clarity.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Engagements scoped from 6-week sprints to multi-year transformations — always led by experienced operators.
+            Engagements scoped from 6-week sprints to multi-year transformations — always grounded in clear scope, clear ownership, and clear outcomes.
           </p>
         </div>
 
