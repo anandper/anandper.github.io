@@ -55,7 +55,7 @@ const Home = () => {
                 Clarity. <em className="italic text-brass font-normal">Delivered.</em>
               </h1>
               <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed text-pretty">
-                Consulting for Life Sciences and Technology — Quality & Regulatory transformation, Software Development, and Program Management. We turn complex problems into clear, decisive action.
+                Consulting for Life Sciences and Technology — Quality & Regulatory transformation, Software Development, and Program Management. Strategy you can act on, the morning after the meeting.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Button asChild variant="ink" size="xl">
